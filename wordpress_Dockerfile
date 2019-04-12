@@ -1,3 +1,4 @@
+# С php. Все работает.
 FROM php:7.1-apache
 RUN apt-get update && apt-get install -y apache2 curl
 RUN  mkdir -p /var/www/html && curl -O https://wordpress.org/latest.tar.gz && tar -xvzf /var/www/html/latest.tar.gz
