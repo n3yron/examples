@@ -1,5 +1,5 @@
 FROM php:7.1-apache
-RUN apt-get update && apt-get install -y apache2 curl #php-curl php-gd php-mbstring php-mcrypt php-xml php-xmlrpc curl
+RUN apt-get update && apt-get install -y apache2 curl
 RUN  mkdir -p /var/www/html && curl -O https://wordpress.org/latest.tar.gz && tar -xvzf /var/www/html/latest.tar.gz
 EXPOSE 80
 CMD ["apache2-foreground"]
