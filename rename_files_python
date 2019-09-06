@@ -1,8 +1,8 @@
 import os
 
-for f in os.listdir():
-    file_name, file_ext = os.path.splitext(f)
-    print(f)
+for f in os.listdir(): # выводит имена файлов через фукнцию листдир
+    file_name, file_ext = os.path.splitext(f) # создает разделенные переменные от функции сплит
+    print(f) 
     
 #    f_title, f_course, f_num = f_name.split('_')
 #    print ('{}-{}-{}'.format(f_title, f_num, f_course))
@@ -12,7 +12,7 @@ for f in os.listdir():
 
 #    print('{}_{}{}'.format(f_b, f_a, file_ext))
 
-    new_name = '{}_{}{}'.format(f_b, f_a, file_ext)
+    new_name = '{}_{}{}'.format(f_b, f_a, file_ext) # делит в таком формате как показывают фигурные скобки и подставляются куски справа
     os.rename(f, new_name)
 
 # Переименовывыет файлы. Например есть пачка файлов в духе 11_file.txt, можно сделать file_11.txt или например file.txt
